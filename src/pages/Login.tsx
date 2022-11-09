@@ -2,12 +2,16 @@ import { Link } from 'react-router-dom';
 
 function Login() {
   return (
-    <div className='Login'>
-      <input type='text' placeholder='login' />
-      <input type='password' name='' id='' placeholder='senha' />
-      <Link to='/dashboard'>
-        <button>Login</button>
-      </Link>
+    <div className='LoginContainer'>
+      <div className='box'></div>
+      <div className='Break'></div>
+      <input type='text' placeholder='E-mail' className='Login' />
+      <div className='Break'></div>
+      <input type='password' name='' id='' placeholder='Senha' className='Senha' />
+      <div className='Break'></div>
+      <button className='BotaoLogin' >Entrar</button>
+      {/* <Link to='/dashboard'>
+      </Link> */}
     </div>
   );
 }
