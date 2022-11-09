@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Landing() {
   return (
-    <div>
+    <div className='text-black'>
       <h1>landing</h1>
       <Link to='/login'>
         <button>Login</button>
