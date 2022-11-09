@@ -1,18 +1,25 @@
-import { Link } from 'react-router-dom';
+import HeaderTwo from '../components/HeaderTwo';
 import PathItem from '../components/PathItem';
 
 function DashBoard() {
   return (
-    <div className='container mx-auto text-black mt-12'>
-      <div className='flex justify-around mb-12'>
-        <h1 className='text-4xl font-extrabold'>Trilhas de estudo</h1>
-        <div className='p-6 bg-orange bg-orange-600 rounded-xl'></div>
-      </div>
-      <div className='flex gap-2 ml-[19%]'>
+    <>
+      <HeaderTwo />
+      <div className='container mx-auto text-black mt-12 grid sm:grid-cols-4 grid-cols-2 gap-y-5'>
+        <h1 className='text-4xl font-extrabold col-span-2 justify-self-center sm:justify-self-start'>
+          Trilhas de estudo
+        </h1>
+        <img
+          src='/shit.bmp'
+          alt=''
+          className='justify-self-start invisible sm:visible'
+        />
+        <PathItem />
+        <PathItem />
         <PathItem />
         <PathItem />
       </div>
-    </div>
+    </>
   );
 }
 
