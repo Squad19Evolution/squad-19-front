@@ -5,7 +5,12 @@ module.exports = {
     fontFamily: {
       sans: ['Montserrat'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'orangeJuice': '#FF3200',
+        'azulFormacao': '#04288B',
+      }
+    },
   },
   plugins: [],
 };
