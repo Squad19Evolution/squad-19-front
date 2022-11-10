@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Login() {
   return (
-    <div className='bg-slate-50 h-screen'>
+    <div className='bg-zinc-50 h-screen'>
       <div className='container mx-auto flex flex-col items-center gap-y-10'>
         <div className='mt-32 lg:px-36 sm:px-28 px-28 lg:py-16 sm:py-14 py-12 rounded-xl shrink bg-azulFormacao'></div>
         <input
