@@ -1,17 +1,8 @@
 function HeaderTwo() {
   return (
-    <nav className='bg-black border-gray-200 px-2 sm:px-4 py-2.5 '>
+    <nav className='bg-[#C4D3FD] border-gray-200 px-2 sm:px-4 py-2.5 '>
       <div className='container flex flex-wrap justify-between items-center mx-auto'>
-        <a href='' className='flex items-center'>
-          <img
-            src='https://d335luupugsy2.cloudfront.net/cms/files/107693/1654526197/$g74vm2w5o56'
-            className='mr-3 h-6 sm:h-9'
-            alt='Orange Juice Logo'
-          />
-          <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
-            Orange Juice
-          </span>
-        </a>
+        <div className="bg-azulFormacao lg:w-48 md:w-48 w-28 h-12 rounded-lg shrink " ></div>
         <div className='hidden w-full md:block md:w-auto' id='navbar-default'>
           <ul className='flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium items-center'>
             <li>
