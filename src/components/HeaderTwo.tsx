@@ -1,6 +1,6 @@
 function HeaderTwo() {
   return (
-    <nav className='bg-black border-gray-200 px-2 sm:px-4 py-2.5 '>
+    <nav className='bg-[#C4D3FD] border-gray-200 px-2 sm:px-4 py-2.5 '>
       <div className='container flex flex-wrap justify-between items-center mx-auto'>
         <a href='' className='flex items-center'>
           <img
