@@ -2,15 +2,19 @@ import { Link } from 'react-router-dom';
 
 function PathItem() {
   return (
-    <div className='col-span-2 justify-self-center sm:justify-self-start'>
+    <div className='flex flex-col'>
       <Link to='/path'>
-        <img
-          src='/whatever.bmp'
-          alt=''
-          className='border border-orange-500 rounded-lg mb-2'
-        />
+        <div className='flex justify-center'>
+          <img
+            src='/path_img.png'
+            alt=''
+            className='mb-4 w-28 h-28 rounded-full'
+          />
+        </div>
+        <p className='text-white text-sm font-extrabold bg-blue-800 rounded-lg text-center px-4 py-2'>
+          Full-Stack Iniciante
+        </p>
       </Link>
-      <p className='font-extrabold'>Nome da Trilha</p>
     </div>
   );
 }
