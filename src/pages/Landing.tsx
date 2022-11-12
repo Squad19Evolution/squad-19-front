@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import BookLogo from '../components/BookLogo';
 import Header from '../components/Header';
 
 function Landing() {
@@ -6,7 +7,7 @@ function Landing() {
     <div className='  '>
       <Header />
       <div className=' mx-auto flex flex-col items-center gap-y-6 mt-36 sm:mt-10 mb-10 '>
-        <img src='/src/media/studying 1.svg' alt='books' />
+        <BookLogo />
         <h1 className=' text-orangeJuice text-center w-80 text-2xl font-bold '>
           Venha vitaminar o seu conhecimento com a gente!
         </h1>
