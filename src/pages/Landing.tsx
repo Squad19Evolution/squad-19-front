@@ -3,7 +3,7 @@ import HeaderTwo from '../components/HeaderTwo';
 
 function Landing() {
   return (
-    <div className='text-black bg-zinc-50 '>
+    <div className='text-black '>
       <HeaderTwo />
       <h1>landing</h1>
       <Link to='/login'>
