@@ -5,19 +5,19 @@ function DashBoard() {
   return (
     <>
       <HeaderTwo />
-      <div className='container mx-auto text-black mt-12 grid sm:grid-cols-4 grid-cols-2 gap-y-5'>
-        <h1 className='text-4xl font-extrabold col-span-2 justify-self-center sm:justify-self-start'>
-          Trilhas de estudo
-        </h1>
-        <img
-          src='/shit.bmp'
-          alt=''
-          className='justify-self-start invisible sm:visible'
-        />
-        <PathItem />
-        <PathItem />
-        <PathItem />
-        <PathItem />
+      <div className='container mx-auto mt-14'>
+        <div className='flex flex-wrap flex-col gap-y-3 sm:flex-row items-center justify-between'>
+          <h1 className='text-orangeJuice text-5xl font-extrabold'>
+            Trilhas de estudo
+          </h1>
+          <img src='/shit.bmp' alt='' className='' />
+        </div>
+        <div className='flex flex-wrap flex-col sm:flex-row gap-x-5 items-center mt-10'>
+          <PathItem />
+          <PathItem />
+          <PathItem />
+          <PathItem />
+        </div>
       </div>
     </>
   );
