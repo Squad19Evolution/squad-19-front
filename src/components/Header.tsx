@@ -28,7 +28,7 @@ function Header() {
           <a
             href='https://discord.com'
             className=' text-azulFormacao text-xs md:text-base font-bold '>
-            Discord
+            Comunidade
           </a>
           <LoginButtom />
         </div>
