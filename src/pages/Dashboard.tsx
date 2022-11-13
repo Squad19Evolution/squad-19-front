@@ -10,7 +10,7 @@ function DashBoard() {
           <h1 className='text-orangeJuice text-5xl font-extrabold'>
             Trilhas de estudo
           </h1>
-          <img src='/shit.bmp' alt='' className='' />
+          {/* <img src='/shit.bmp' alt='' className='' /> */}
         </div>
         <div className='flex flex-wrap flex-col sm:flex-row gap-x-5 items-center mt-10'>
           <PathItem />
