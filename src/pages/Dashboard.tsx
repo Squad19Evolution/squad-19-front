@@ -1,10 +1,10 @@
-import Header from '../components/Header';
+import HeaderTwo from '../components/HeaderTwo';
 import PathItem from '../components/PathItem';
 
 function DashBoard() {
   return (
     <>
-      <Header />
+      <HeaderTwo />
       <div className='container mx-auto mt-14'>
         <div className='flex flex-wrap flex-col gap-y-3 sm:flex-row items-center justify-between'>
           <h1 className='text-orangeJuice text-5xl font-extrabold'>

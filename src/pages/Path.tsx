@@ -1,10 +1,10 @@
 import ContentItem from '../components/ContentItem';
-import Header from '../components/Header';
+import HeaderThree from '../components/HeaderThree';
 
 function Path() {
   return (
     <>
-      <Header />
+      <HeaderThree />
       <div className='container mx-auto text-orangeJuice mt-10 flex flex-col sm:flex-row justify-between'>
         <div className='flex flex-col'>
           <h1 className='font-extrabold text-5xl p-5'>
