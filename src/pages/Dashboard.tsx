@@ -1,7 +1,11 @@
+import { useContext } from 'react';
 import HeaderTwo from '../components/HeaderTwo';
 import PathItem from '../components/PathItem';
+import { GlobalContext } from '../context/GlobalContext';
 
 function DashBoard() {
+  const { paths } = useContext(GlobalContext);
+
   return (
     <>
       <HeaderTwo />
@@ -12,10 +16,9 @@ function DashBoard() {
           </h1>
         </div>
         <div className='flex flex-wrap flex-col sm:flex-row gap-x-5 items-center mt-10'>
-          <PathItem />
-          <PathItem />
-          <PathItem />
-          <PathItem />
+          {paths.map((el) => (
+            <PathItem key={el.id} item={el} />
+          ))}
         </div>
       </div>
     </>
