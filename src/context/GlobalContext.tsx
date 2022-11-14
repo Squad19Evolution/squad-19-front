@@ -11,7 +11,9 @@ export const GlobalProvider = (props: { children: any }) => {
   }, []);
 
   const fetchPaths = async () => {
-    const response = await fetch(`http://localhost:3000/path`);
+    const response = await fetch(
+      `https://infinite-citadel-30300.herokuapp.com/path`,
+    );
     const data = await response.json();
 
     setPaths(data);
