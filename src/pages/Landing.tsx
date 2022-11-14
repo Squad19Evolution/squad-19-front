@@ -17,7 +17,9 @@ function Landing() {
             Estude através de trilhas pré-definidas por mentores da FCamara que
             são especialistas em tecnologia!
           </p>
-          <p className=' bg-azulFormacao rounded-lg self-center px-7 md:px-12 py-3 md:py-4 md:text-2xl md:self-start font-bold '>Cadastre-se</p>
+          <Link to="/signup" className=' bg-azulFormacao rounded-lg self-center px-7 md:px-12 py-3 md:py-4 md:text-2xl md:self-start font-bold' >
+            <p className=' '>Cadastre-se</p>
+          </Link>
         </div>
       </div>
     </div>
