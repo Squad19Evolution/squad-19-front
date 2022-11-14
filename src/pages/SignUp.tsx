@@ -5,7 +5,8 @@ function SignUp() {
   return (
     <div className='h-screen'>
       <div className='container mx-auto flex flex-col items-center gap-y-10'>
-        <div className='mt-32 lg:px-36 sm:px-28 px-28 lg:py-16 sm:py-14 py-12 rounded-xl shrink bg-azulFormacao'></div>
+        {/* <div className='mt-32 lg:px-36 sm:px-28 px-28 lg:py-16 sm:py-14 py-12 rounded-xl shrink bg-azulFormacao'></div> */}
+        <img src="Ativo.png" alt="logo" className=' mt-32 w-52 md:w-96 ' />
         <input
           type='text'
           placeholder='E-mail'
