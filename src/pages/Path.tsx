@@ -28,8 +28,8 @@ function Path() {
           </div>
         </div>
         <div className='flex flex-wrap flex-col md:flex-row gap-5 items-center'>
-          {path?.contents.map((el) => (
-            <ContentItem key={el.id} item={el} />
+          {path?.contents.map((el, i) => (
+            <ContentItem key={i} item={el} />
           ))}
         </div>
       </div>

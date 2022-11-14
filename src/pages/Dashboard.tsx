@@ -16,8 +16,8 @@ function DashBoard() {
           </h1>
         </div>
         <div className='flex flex-wrap flex-col sm:flex-row gap-x-5 items-center mt-10'>
-          {paths.map((el) => (
-            <PathItem key={el.id} item={el} />
+          {paths.map((el, i) => (
+            <PathItem key={i} item={el} />
           ))}
         </div>
       </div>

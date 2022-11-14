@@ -1,7 +1,18 @@
 import { createContext, useEffect, useState } from 'react';
 // import { data } from '../data/data';
 
-export const GlobalContext = createContext({});
+const initialState = {
+  paths: [
+    {
+      id: 0,
+      name: 'name',
+      description: 'description',
+      contents: [],
+    },
+  ],
+};
+
+export const GlobalContext = createContext(initialState);
 
 export const GlobalProvider = (props: { children: any }) => {
   const [paths, setPaths] = useState([]);
