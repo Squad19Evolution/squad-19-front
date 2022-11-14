@@ -8,21 +8,21 @@ function Login() {
         <input
           type='text'
           placeholder='E-mail'
-          className='border-solid border-b-2 border-orangeJuice placeholder:text-3xl placeholder:text-orangeJuice text-orangeJuice p-3 lg:px-10 bg-zinc-50'
+          className='border-b-[1px] border-orangeJuice placeholder:text-xs md:placeholder:text-lg placeholder:text-orangeJuice text-orangeJuice bg-zinc-50 w-52 md:w-96'
         />
         <input
           type='password'
           name=''
           id=''
           placeholder='Senha'
-          className='border-solid border-b-2 border-orangeJuice placeholder:text-3xl placeholder:text-orangeJuice text-orangeJuice p-3 lg:px-10 bg-zinc-50'
+          className='border-b-[1px] border-orangeJuice placeholder:text-xs md:placeholder:text-lg placeholder:text-orangeJuice text-orangeJuice bg-zinc-50 w-52 md:w-96'
         />
-        <Link to='/dashboard'>
-          <button className=' bg-azulFormacao px-8 pb-1 rounded-md py-1 text-3xl text-zinc-50 font-semibold'>
-            Entrar
-          </button>
+        <Link to='/dashboard' className=' bg-azulFormacao px-14 md:px-32 py-2 md:py-4 rounded-md text-base md:text-3xl text-zinc-50 font-semibold' >
+          Entrar
         </Link>
-        <button>Cadastre-se</button>
+        <Link to="/signup" className=' text-orangeJuice text-xs md:text-base' >
+          Não possui uma conta? <span className='font-bold'>Cadastre-se</span>
+        </Link>
       </div>
     </div>
   );
