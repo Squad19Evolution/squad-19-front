@@ -6,22 +6,11 @@ function HeaderTwo() {
     <nav className='bg-[#C4D3FD] border-gray-200 px-2 sm:px-4 py-5 sm:py-7 '>
       <div className='container flex flex-wrap justify-between items-center mx-auto '>
         <Link to='/'>
-          <div className=' bg-azulFormacao p-2 rounded-md md:rounded-lg ' >
-            <a href='' className='flex items-center'>
-              <img
-                src='https://d335luupugsy2.cloudfront.net/cms/files/107693/1654526197/$g74vm2w5o56'
-                className='md:mr-3 h-6 sm:h-9'
-                alt='Orange Juice Logo'
-              />
-              <span className='self-center text-xl font-semibold whitespace-nowrap text-white hidden md:block '>
-                Orange Juice
-              </span>
-            </a>
-          </div>
+          <img src="Ativo.png" alt="logo" className=' w-16 md:w-28 ' />
         </Link>
-        <div className='flex justify-between items-center gap-10'>
+        <div className='flex justify-between items-center gap-8'>
           <a
-            href='https://discord.com'
+            href='https://discord.com/invite/NtESsDFGx5'
             className=' text-azulFormacao text-xs md:text-base font-bold '>
             Comunidade
           </a>
