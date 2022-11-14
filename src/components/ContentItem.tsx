@@ -1,4 +1,4 @@
-function ContentItem() {
+function ContentItem(props: any) {
   return (
     <div className='flex flex-col'>
       <div className='flex justify-center'>
@@ -9,7 +9,7 @@ function ContentItem() {
         />
       </div>
       <p className='text-white text-sm font-extrabold bg-blue-800 rounded-lg text-center px-4 py-2'>
-        O universo de UX
+        {props.item.name}
       </p>
     </div>
   );
