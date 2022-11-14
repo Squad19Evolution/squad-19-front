@@ -15,7 +15,7 @@ function HeaderThree() {
             Trilhas
           </Link>
           <a
-            href='https://discord.com'
+            href='https://discord.com/invite/NtESsDFGx5'
             className=' text-azulFormacao text-xs md:text-base font-bold '>
             Comunidade
           </a>

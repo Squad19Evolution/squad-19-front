@@ -10,7 +10,7 @@ function HeaderTwo() {
         </Link>
         <div className='flex justify-between items-center gap-8'>
           <a
-            href='https://discord.com'
+            href='https://discord.com/invite/NtESsDFGx5'
             className=' text-azulFormacao text-xs md:text-base font-bold '>
             Comunidade
           </a>
