@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-function PathItem() {
+function PathItem(props: any) {
   return (
     <div className='flex flex-col'>
-      <Link to='/path'>
+      <Link to={`/path/${props.item.id}`}>
         <div className='flex justify-center'>
           <img
             src='/path_img.png'
@@ -12,7 +12,7 @@ function PathItem() {
           />
         </div>
         <p className='text-white text-sm font-extrabold bg-blue-800 rounded-lg text-center px-4 py-2'>
-          Full-Stack Iniciante
+          {props.item.name}
         </p>
       </Link>
     </div>
