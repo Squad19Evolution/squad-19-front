@@ -21,7 +21,7 @@ function Login() {
         <Link to='/dashboard' className=' bg-azulFormacao px-14 md:px-32 py-2 md:py-4 rounded-md text-base md:text-3xl text-zinc-50 font-semibold' >
           Entrar
         </Link>
-        <Link to="/signup" className=' text-orangeJuice text-xs md:text-base' >
+        <Link to="/signup" className=' text-azulFormacao text-xs md:text-base' >
           Não possui uma conta? <span className='font-bold'>Cadastre-se</span>
         </Link>
       </div>
