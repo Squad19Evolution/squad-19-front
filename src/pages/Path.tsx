@@ -10,8 +10,6 @@ function Path() {
   const { paths } = useContext(GlobalContext);
   const path = paths.find((el) => +params.id === el.id);
 
-  let percent = 7;
-  let progressBar = ` bg-azulFormacao h-2.5 rounded-full w-[${percent}%] `;
   return (
     <>
       <HeaderThree />

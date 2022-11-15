@@ -1,5 +1,5 @@
 function Progress() {
-  let percent = 45;
+  let percent = 0;
   let progressBar = ` bg-azulFormacao h-2.5 rounded-full w-[${percent}%] `
   return (
     <div className=' bg-[#C4D3FD] flex flex-col gap-y-2 md:gap-y-4 text-azulFormacao rounded-lg p-3 my-4 w-[100%] ' >
