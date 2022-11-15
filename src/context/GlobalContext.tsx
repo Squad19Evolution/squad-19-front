@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from 'react';
-// import { data } from '../data/data';
 
 const initialState = {
   paths: [
@@ -10,16 +9,30 @@ const initialState = {
       contents: [],
     },
   ],
+  handleComplete: null,
+  handleNotFinished: null,
+  completedContents: [],
 };
 
 export const GlobalContext = createContext(initialState);
 
 export const GlobalProvider = (props: { children: any }) => {
   const [paths, setPaths] = useState([]);
+  const [completedContents, setCompletedContents] = useState([]);
 
   useEffect(() => {
     fetchPaths();
   }, []);
+
+  const handleComplete = (content) => {
+    setCompletedContents([...completedContents, content]);
+  };
+
+  const handleNotFinished = (content) => {
+    setCompletedContents(
+      completedContents.filter((el) => el.id !== content.id),
+    );
+  };
 
   const fetchPaths = async () => {
     const response = await fetch(
@@ -34,6 +47,9 @@ export const GlobalProvider = (props: { children: any }) => {
     <GlobalContext.Provider
       value={{
         paths,
+        handleComplete,
+        handleNotFinished,
+        completedContents,
       }}>
       {props.children}
     </GlobalContext.Provider>
