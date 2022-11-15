@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function SignUp() {
-  const inputStyle = ' border-b-[1px] border-orangeJuice placeholder:text-xs md:placeholder:text-lg placeholder:text-orangeJuice text-orangeJuice bg-zinc-50 w-52 md:w-96 '
+  const inputStyle = ' border-b-[1px] border-azulFormacao placeholder:text-xs md:placeholder:text-lg placeholder:text-azulFormacao text-azulFormacao bg-zinc-50 w-52 md:w-96 '
   return (
     <div className='h-screen'>
       <div className='container mx-auto flex flex-col items-center gap-y-10'>
