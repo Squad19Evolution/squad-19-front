@@ -9,6 +9,35 @@ function Path() {
   const params = useParams();
   const { paths } = useContext(GlobalContext);
   const path = paths.find((el) => +params.id === el.id);
+  let seconds = 0;
+
+  function addTime(time) {
+    var splited = '';
+    splited = time.split(':', 3);
+    seconds += parseInt(splited[2]);
+    seconds += parseInt(splited[1]) * 60;
+    seconds += parseInt(splited[0]) * 60 * 60;
+  }
+
+  function calculateTime() {
+    var s = seconds % 60;
+    var m = Math.floor(seconds / 60) % 60;
+    var h = Math.floor(seconds / 60 / 60);
+    return `${h.toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false,
+    })}:${m.toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false,
+    })}:${s.toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false,
+    })}`;
+  }
+
+  path.contents.forEach((el) => {
+    addTime(el.duration);
+  });
 
   return (
     <>
@@ -22,12 +51,12 @@ function Path() {
               Não esqueça de registrar o seu progresso!
             </p>
             {/* colocar prop nesse progress aqui */}
-            <Progress />
+            <Progress path={path} duration={calculateTime()} />
           </div>
         </div>
         <div className='flex flex-wrap flex-col md:flex-row gap-5 items-center'>
           {path?.contents.map((el, i) => (
-            <ContentItem key={i} item={el} />
+            <ContentItem key={i} item={{ path_id: path.id, ...el }} />
           ))}
         </div>
       </div>
