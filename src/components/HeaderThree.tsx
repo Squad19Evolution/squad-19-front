@@ -7,7 +7,7 @@ function HeaderThree() {
       <div className='container flex flex-wrap justify-between items-center mx-auto '>
         <Link to='/'>
           <img
-            src='../../public/Ativo.png'
+            src='/Ativo.png'
             alt='logo'
             className=' w-16 md:w-28 '
           />
