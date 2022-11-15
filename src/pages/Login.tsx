@@ -9,14 +9,14 @@ function Login() {
         <input
           type='text'
           placeholder='E-mail'
-          className='border-b-[1px] border-orangeJuice placeholder:text-xs md:placeholder:text-lg placeholder:text-orangeJuice text-orangeJuice bg-zinc-50 w-52 md:w-96'
+          className='border-b-[1px] border-azulFormacao placeholder:text-xs md:placeholder:text-lg placeholder:text-azulFormacao text-azulFormacao bg-zinc-50 w-52 md:w-96'
         />
         <input
           type='password'
           name=''
           id=''
           placeholder='Senha'
-          className='border-b-[1px] border-orangeJuice placeholder:text-xs md:placeholder:text-lg placeholder:text-orangeJuice text-orangeJuice bg-zinc-50 w-52 md:w-96'
+          className='border-b-[1px] border-azulFormacao placeholder:text-xs md:placeholder:text-lg placeholder:text-azulFormacao text-azulFormacao bg-zinc-50 w-52 md:w-96'
         />
         <Link to='/dashboard' className=' bg-azulFormacao px-14 md:px-32 py-2 md:py-4 rounded-md text-base md:text-3xl text-zinc-50 font-semibold' >
           Entrar
