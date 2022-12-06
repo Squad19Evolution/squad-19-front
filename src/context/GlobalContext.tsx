@@ -36,7 +36,8 @@ export const GlobalProvider = (props: { children: any }) => {
 
   const fetchPaths = async () => {
     const response = await fetch(
-      `https://infinite-citadel-30300.herokuapp.com/path`,
+      // o Heroku deixou de ser gratuito no dia 28/11. Modifiquei a request para localhost.
+      `http://localhost:3000/path`,
     );
     const data = await response.json();
 
